@@ -16,7 +16,7 @@ public class MovieListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_movie_list);
 
-        setSupportActionBar(findViewById(R.id.toolbar));
+
 
     }
 

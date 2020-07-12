@@ -1,4 +1,4 @@
-package com.okan.themoviedbapp.models.genre;
+package com.okan.themoviedbapp.requests.responses;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

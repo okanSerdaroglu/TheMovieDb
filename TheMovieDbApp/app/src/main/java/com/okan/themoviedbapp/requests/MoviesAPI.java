@@ -1,6 +1,6 @@
 package com.okan.themoviedbapp.requests;
 
-import com.okan.themoviedbapp.models.genre.Genre;
+import com.okan.themoviedbapp.requests.responses.Genre;
 
 import java.util.List;
 

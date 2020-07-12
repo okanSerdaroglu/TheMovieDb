@@ -1,7 +1,8 @@
-package com.okan.themoviedbapp.models.movie;
+package com.okan.themoviedbapp.requests.responses;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
+import com.okan.themoviedbapp.models.movie.Movie;
 
 import java.util.List;
 
@@ -55,4 +56,13 @@ public class Result {
         this.movieList = movieList;
     }
 
+    @Override
+    public String toString() {
+        return "Result{" +
+                "page=" + page +
+                ", total_results=" + total_results +
+                ", total_pages=" + total_pages +
+                ", movieList=" + movieList +
+                '}';
+    }
 }
