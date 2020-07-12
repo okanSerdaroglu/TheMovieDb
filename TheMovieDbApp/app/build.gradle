@@ -23,11 +23,50 @@ android {
 }
 
 dependencies {
+
+    def retrofitVersion = "2.8.1"
+    def lifecycle_version = "2.2.0"
+    def recyclerViewVersion = "1.1.0"
+    def cardViewVersion = "1.0.0"
+    def glideVersion = "4.11.0"
+    def materialVersion = "1.1.0"
+    def circleImageViewVersion = "3.1.0"
+
+
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    // retrofit
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+
+    // gsonConverter
+    implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+
+    // ViewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel:$lifecycle_version"
+
+    // LiveData
+    implementation "androidx.lifecycle:lifecycle-livedata:$lifecycle_version"
+
+    // cardView
+    implementation "androidx.cardview:cardview:$cardViewVersion"
+
+    // recyclerView
+    implementation "androidx.recyclerview:recyclerview:$recyclerViewVersion"
+
+    // glide
+    implementation "com.github.bumptech.glide:glide:$glideVersion"
+    annotationProcessor "com.github.bumptech.glide:compiler:$glideVersion"
+
+    // google material for AppBarLayout etc..
+    implementation "com.google.android.material:material:$materialVersion"
+
+    // circle imageView
+    implementation "de.hdodenhof:circleimageview:$circleImageViewVersion"
+
 
 }
