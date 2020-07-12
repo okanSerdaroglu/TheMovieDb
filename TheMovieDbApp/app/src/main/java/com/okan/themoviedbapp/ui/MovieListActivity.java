@@ -8,6 +8,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.okan.themoviedbapp.R;
+import com.okan.themoviedbapp.requests.MoviesApiClient;
 
 public class MovieListActivity extends AppCompatActivity {
 
@@ -16,7 +17,7 @@ public class MovieListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_movie_list);
 
-
+        MoviesApiClient.getInstance().searchGenreList();
 
     }
 
