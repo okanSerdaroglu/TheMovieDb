@@ -1,8 +1,7 @@
 package com.okan.themoviedbapp.requests;
 
-import com.okan.themoviedbapp.requests.responses.Genre;
+import com.okan.themoviedbapp.requests.responses.GenreListResponse;
 
-import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
@@ -12,7 +11,7 @@ public interface MoviesAPI {
 
     // get genre list
     @GET("/genre/movie/list")
-    Call<List<Genre>> getGenreList(
+    Call<GenreListResponse> getGenreList(
             @Query("apiKey") String apiKey
     );
 
