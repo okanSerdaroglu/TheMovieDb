@@ -49,7 +49,7 @@ public class MoviesApiClient {
 
     }
 
-    private class GetGenreListRunnable implements Runnable {
+    private static class GetGenreListRunnable implements Runnable {
 
         @Override
         public void run() {
@@ -60,7 +60,7 @@ public class MoviesApiClient {
                     Log.d(TAG, response.toString());
                 }
 
-            } catch (Exception e) {
+            } catch (Exception ignored) {
 
             }
 
