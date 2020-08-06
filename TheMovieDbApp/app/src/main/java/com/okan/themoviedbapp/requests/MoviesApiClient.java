@@ -55,13 +55,12 @@ public class MoviesApiClient {
         public void run() {
             try {
                 Response response = getGenres().execute();
-                Log.d(TAG,String.valueOf(response.code()));
+                Log.d(TAG, String.valueOf(response.code()));
                 if (response.code() == Constants.RESULT_OK) {
                     Log.d(TAG, response.toString());
                 }
-
             } catch (Exception ignored) {
-
+                Log.d("ignored", ignored.getLocalizedMessage());
             }
 
         }
