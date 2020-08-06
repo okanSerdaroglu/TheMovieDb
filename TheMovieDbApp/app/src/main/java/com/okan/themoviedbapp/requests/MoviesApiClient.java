@@ -57,7 +57,7 @@ public class MoviesApiClient {
                 Response response = getGenres().execute();
                 Log.d(TAG, String.valueOf(response.code()));
                 if (response.code() == Constants.RESULT_OK) {
-                    Log.d(TAG, response.toString());
+
                 }
             } catch (Exception ignored) {
                 Log.d("ignored", ignored.getLocalizedMessage());
@@ -66,7 +66,11 @@ public class MoviesApiClient {
         }
 
         private Call<GenreListResponse> getGenres() {
-            return ServiceGenerator.getMoviesAPI().getGenreList(BuildConfig.API_KEY);
+
+            Log.d(TAG,ServiceGenerator.getMoviesAPI()
+                    .getGenreList(BuildConfig.API_KEY, Constants.language).toString());
+            return ServiceGenerator.getMoviesAPI()
+                    .getGenreList(BuildConfig.API_KEY, Constants.language);
         }
     }
 
