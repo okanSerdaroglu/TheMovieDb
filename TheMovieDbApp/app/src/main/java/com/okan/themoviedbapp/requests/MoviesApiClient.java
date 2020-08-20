@@ -49,7 +49,10 @@ public class MoviesApiClient {
 
     }
 
-    private static class GetGenreListRunnable implements Runnable {
+    private class GetGenreListRunnable implements Runnable {
+
+        GetGenreListRunnable() {
+        }
 
         @Override
         public void run() {

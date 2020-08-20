@@ -8,9 +8,9 @@ import retrofit2.http.Query;
 
 public interface MoviesAPI {
     // get genre list
-    @GET("/genre/movie/list")
+    @GET("genre/movie/list")
     Call<GenreListResponse> getGenreList(
-            @Query("apiKey") String apiKey,
+            @Query("api_key") String apiKey,
             @Query("language") String language
     );
 }
